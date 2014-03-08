@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/helppan"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollHelp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/butconverter"
+        android:windowSoftInputMode="adjustPan" >
+
+        <LinearLayout
+            android:id="@+id/mainHelp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:orientation="vertical"
+            android:windowSoftInputMode="adjustPan" >
+
+            <TextView
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:clickable="false"
+                android:text="Hints"
+                android:textColor="#D13B16"
+                android:textSize="30sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:text="Here are some frequently asked questions with answers about:"
+                android:textColor="#FFFF"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:text="Calculator"
+                android:textColor="#D13B16"
+                android:textSize="25sp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/mainHelp1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:orientation="vertical"
+                android:textColor="#D13B16"
+                android:windowSoftInputMode="adjustPan" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:text="Graph Panel"
+                android:textColor="#D13B16"
+                android:textSize="25sp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/mainHelp2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:orientation="vertical"
+                android:windowSoftInputMode="adjustPan" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/editText3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:text="Converter"
+                android:textColor="#D13B16"
+                android:textSize="25sp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/mainHelp3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:orientation="vertical"
+                android:windowSoftInputMode="adjustPan" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/editText4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:text="Currency"
+                android:textColor="#D13B16"
+                android:textSize="25sp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/mainHelp4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:orientation="vertical"
+                android:windowSoftInputMode="adjustPan" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

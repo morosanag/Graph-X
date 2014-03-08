@@ -1,0 +1,311 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#24292D"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".GraphpanActivity" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/maingraphpanel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/main"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:alpha="0.8"
+                        android:background="@drawable/layout_e"
+                        android:text="Add"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btdel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:alpha="0.8"
+                        android:background="@drawable/layout_e"
+                        android:text="Del"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:alpha="0.8"
+                        android:background="@drawable/layout_e"
+                        android:text="Generate Graph"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/refresh_match_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:alpha="0.8"
+                        android:padding="10dp"
+                        android:text="Precision Control"
+                        android:textSize="20sp" />
+
+                    <SeekBar
+                        android:id="@+id/volume_bar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:alpha="0.8"
+                        android:max="100"
+                        android:progress="20"
+                        android:progressDrawable="@drawable/progress"
+                        android:secondaryProgress="0"
+                        android:thumb="@drawable/thumb" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="12" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:alpha="0.8"
+                            android:gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:alpha="0.8"
+                            android:gravity="center_horizontal"
+                            android:text="200"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:alpha="0.8"
+                            android:gravity="center_horizontal"
+                            android:text="400"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:alpha="0.8"
+                            android:gravity="center_horizontal"
+                            android:text="600"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:alpha="0.8"
+                            android:gravity="center_horizontal"
+                            android:text="800"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:alpha="0.8"
+                            android:gravity="center_horizontal"
+                            android:text="1000"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/refresh_match_layoutLimits"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="15"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:alpha="0.8"
+                        android:padding="10dp"
+                        android:text="Limits"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="11" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:gravity="center_horizontal"
+                            android:text="X: "
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/limitx1"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2.25"
+                            android:alpha="0.8"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:text="-10"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/limitx2"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2.25"
+                            android:alpha="0.8"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:text="20"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:gravity="center_horizontal"
+                            android:text="Y: "
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/limity1"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2.25"
+                            android:alpha="0.8"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:text="-10"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/limity2"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2.25"
+                            android:alpha="0.8"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:text="40"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/refresh_match_layoutLimits"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:alpha="0.8"
+                        android:padding="10dp"
+                        android:text="Functions: "
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#26292E"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" />
+
+</LinearLayout>
